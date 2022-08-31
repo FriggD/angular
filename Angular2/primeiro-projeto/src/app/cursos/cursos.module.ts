@@ -15,7 +15,7 @@ import { CursosComponent } from './cursos.component';
   ],
   exports: [
     CursosComponent,
-    //CursoDetalheComponent
+   
   ]
 })
 export class CursosModule { }
