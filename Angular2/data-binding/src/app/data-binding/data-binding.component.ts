@@ -14,6 +14,11 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string ='';
   valorSalvo: string ='';
   isMouseOver: boolean = false;
+  nome: string ='abc';
+  pessoa: any = {
+    nome: "def",
+    idade: 20
+  }
 
   getValor(){
     return 1;
@@ -40,6 +45,9 @@ export class DataBindingComponent implements OnInit {
     this.isMouseOver =!this.isMouseOver;
   }
 
+  salvarNome(evento:any){
+    this.nome = (evento.target as HTMLInputElement).value;
+  }
   constructor() { }
 
   ngOnInit(): void {
